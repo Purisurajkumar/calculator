@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./Calculator.css"/>
+    <script src="./Calculator.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div id="content">
+            <div id="heading">Calculator</div>
+            <div id="screen"></div>
+        <table id="keyboard">
+          <tbody class="tablebody">
+              <!-- <tr>
+                  <td id="screen" colspan="4"></td>
+              </tr> -->
+              <tr>
+                  <td><button id="clear" class="buttonbox" onclick="Allclear()">AC</button></td>
+                  <td><button id="delete" class="buttonbox" onclick="remove()">X</button></td>
+                  <td><button id="persent" class="buttonbox"  onclick="take('%')">%</button></td>
+                  <td><button id="Divide" class="buttonbox" onclick="take('/')">/</button></td>
+              </tr>
+              <tr>
+                  <td><button id="7Box" class="buttonbox" onclick="take('7')">7</button></td>
+                  <td><button id="8Box" class="buttonbox" onclick="take('8')">8</button></td>
+                  <td><button id="9Box" class="buttonbox" onclick="take('9')">9</button></td>
+                  <td><button id="Multiply" class="buttonbox"  onclick="take('*')">*</button></td> 
+              </tr>
+              <tr>
+              <td><button id="4Box" class="buttonbox"  onclick="take('4')">4</button></td>
+              <td><button id="5Box" class="buttonbox"  onclick="take('5')">5</button></td>
+              <td><button id="6Box" class="buttonbox"  onclick="take('6')">6</button></td>
+              <td><button id="Subtract" class="buttonbox"  onclick="take('-')">-</button></td>
+              </tr>
+              <tr>
+                <td><button id="1Box" class="buttonbox"  onclick="take('1')">1</button></td>
+                <td><button id="2Box" class="buttonbox"  onclick="take('2')">2</button></td>
+                <td><button id="3Box" class="buttonbox"  onclick="take('3')">3</button></td>
+                <td><button id="Add" class="buttonbox"  onclick="take('+')">+</button></td>    
+              </tr>
+              <tr>
+                <td><button id="0Box" class="buttonbox"  onclick="take('0')">0</button></td>
+                <td><button id="Dot" class="buttonbox"  onclick="take('.')">.</button></td>
+                <td colspan="2"><button id="Equal" class="buttonbox" onclick="solution()">=</button></td>
+              </tr>
+          </tbody>
+        </table>
+        </div>
+    </div>
+</body>
+</html>
